@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Side Sign Up/In Form</title>
+
+    <!-- Fontawesome CDN link  -->
+    <script src="https://kit.fontawesome.com/2161eb502c.js"></script>
+
+    <!-- Custom CSS link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Login and Signup Form UI Design</h2>
+    <div class="container" id="container">
+      <div class="form-container signup-container">
+        <form action="#">
+          <h1>Create An Account</h1>
+          <input type="text" placeholder="Enter your full name" />
+          <input type="email" placeholder="example@gmail.com" />
+          <input type="password" placeholder="Password" />
+          <span>Or user your social media for Ragistration</span>
+          <div class="social-container">
+            <a href="#" class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+              "
+            >
+              <input style="width: 20px" type="checkbox" />
+              <a style="margin: 0" href="#">Accept terms and conditions</a>
+            </div>
+          </div>
+          <button>Create Account</button>
+        </form>
+      </div>
+      <div class="form-container signin-container">
+        <form action="#">
+          <h1>Sign In</h1>
+          <input type="email" placeholder="example@gmail.com" />
+          <input type="password" placeholder="Password" />
+          <span>Or user your social media for login</span>
+          <div class="social-container">
+            <a href="#" class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <button>Sign in</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your info</p>
+            <button class="btn-outline" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
+              molestias!
+            </p>
+            <button class="btn-outline" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
